@@ -58,7 +58,7 @@
 <span class="sd">    load_metabolic_model</span>
 
 <span class="sd">Example:</span>
-<span class="sd">    reactions, reversible, metabolites, target_fragments = mfapy.mfapyio.load_metabolic_model(&quot;Explanation_1_13CMFA_toymodel_model.txt&quot;, format = &quot;text&quot;)</span>
+<span class="sd">    &gt;&gt;&gt; reactions, reversible, metabolites, target_fragments = mfapy.mfapyio.load_metabolic_model(&quot;Explanation_1_13CMFA_toymodel_model.txt&quot;, format = &quot;text&quot;)</span>
 
 <span class="sd">Todo:</span>
 <span class="sd">    * Support other file formats</span>
@@ -402,7 +402,7 @@
     <span class="k">return</span><span class="p">(</span><span class="n">dic</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="load_metabolic_model_fragments"><a class="viewcode-back" href="../../mfapy.html#mfapy.mfapyio.load_metabolic_model_fragments">[docs]</a><span class="k">def</span> <span class="nf">load_metabolic_model_fragments</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="n">mode</span> <span class="o">=</span> <span class="s2">&quot;normal&quot;</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Function to Load mass fragment information from a metabolic model file with following format.</span>
+    <span class="sd">&quot;&quot;&quot;Function to load mass fragment information from a metabolic model file with following format.</span>
 
 <span class="sd">    Examples::</span>
 
@@ -416,9 +416,9 @@
 <span class="sd">        format (str) : &quot;text&quot; (defalut, tab deliminated) or &quot;csv&quot;</span>
 
 <span class="sd">        mode (str) : &quot;normal&quot; (defalut) or &quot;debug&quot; (to show loaded metabolic file data)</span>
+
 <span class="sd">    Returns:</span>
 <span class="sd">        dict : Dictionary of target_fragments</span>
-
 
 <span class="sd">    Examples:</span>
 <span class="sd">        &gt;&gt;&gt; target_fragments = load_metabolic_model_fragments(&#39;filename.txt&#39;)</span>
@@ -499,10 +499,9 @@
     <span class="k">return</span><span class="p">(</span><span class="n">dic</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="load_metabolic_model"><a class="viewcode-back" href="../../mfapy.html#mfapy.mfapyio.load_metabolic_model">[docs]</a><span class="k">def</span> <span class="nf">load_metabolic_model</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">&quot;normal&quot;</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Function to read metabolic model information from a text file</span>
+    <span class="sd">&quot;&quot;&quot;Function to load metabolic model information from a text file</span>
 
 <span class="sd">    CAUTION: Now this function has no error checking.</span>
-
 
 <span class="sd">    Args:</span>
 <span class="sd">        filename (str) : metabolic model file</span>
